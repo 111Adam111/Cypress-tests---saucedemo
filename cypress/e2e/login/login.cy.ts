@@ -24,6 +24,6 @@ describe('Tests login with valid credentials', () => {
         login();
         cy.wait(500);
         cy.url().should('include', '/inventory.html');
-        cy.contains('.error', 'Products');
+        cy.contains('.title', 'Products');
     });
 });
